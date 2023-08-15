@@ -52,11 +52,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     src={`/images/${
                       !open
                         ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
+                          ? "menu.svg"
+                          : "menu-white.svg"
                         : theme === "light"
-                        ? "cancel.svg"
-                        : "cancel-white.svg"
+                        ? "cancel-white.svg"
+                        : "cancel.svg"
                     }`}
                   ></img>
                 </Popover.Button>
@@ -77,7 +77,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showResume && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
+                        router.push("/resume")
                       }
                     >
                       Resume
