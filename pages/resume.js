@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import Button from "../components/Button";
+import HireMe from "../components/HireMe";
+
 import { useTheme } from "next-themes";
 // Data
 import { name, showResume } from "../data/portfolio.json";
@@ -124,6 +126,7 @@ const Resume = () => {
             </div>
           </div>
         )}
+        <HireMe />
       </div>
     </>
   );

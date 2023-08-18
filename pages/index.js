@@ -10,6 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import HireMe from "../components/HireMe";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -110,6 +111,11 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* Hire me Button */}
+        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+          <HireMe />
+        </div>
+        
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
 
